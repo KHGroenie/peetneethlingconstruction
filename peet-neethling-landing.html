@@ -79,6 +79,8 @@
   }
   .icon-btn:hover{ background:#1EBE5B; }
   .icon-btn svg{ width:19px; height:19px; }
+  .icon-btn.fb{ background:#1877F2; color:#fff; }
+  .icon-btn.fb:hover{ background:#0F5FCC; }
   .nav-toggle{ display:none; }
 
   /* ---------- HERO ---------- */
@@ -239,6 +241,8 @@
     border:1px solid #55503F; padding:12px 20px; border-radius:2px; font-size:14px; font-weight:600;
   }
   .proof-links a:hover{ background:var(--white); color:var(--ink); border-color:var(--white); }
+  .proof-links a.icon-btn{ padding:0; border:none; display:flex; }
+  .proof-links a.icon-btn:hover{ background:#0F5FCC; }
 
   /* ---------- CONTACT / FOOTER ---------- */
   footer{
@@ -419,7 +423,9 @@
         <p>See what past clients have said, or leave a review of your own.</p>
       </div>
       <div class="proof-links">
-        <a href="https://www.facebook.com/peetneethlingconstruction/" target="_blank" rel="noopener">Facebook page</a>
+        <a href="https://www.facebook.com/peetneethlingconstruction/" target="_blank" rel="noopener" class="icon-btn fb" aria-label="Visit Facebook page" style="width:44px;height:44px;">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" style="width:20px;height:20px;"><path d="M13.5 21v-7.5h2.5l.4-3H13.5V8.5c0-.87.24-1.46 1.49-1.46H16.5V4.36C16.24 4.32 15.35 4.25 14.31 4.25c-2.16 0-3.64 1.32-3.64 3.75V10.5H8.2v3h2.47V21h2.83z"/></svg>
+        </a>
         <a href="#" target="_blank" rel="noopener">Google reviews</a>
       </div>
     </div>
@@ -454,7 +460,11 @@
       </div>
       <div class="info-block">
         <div class="k">FACEBOOK</div>
-        <div class="v"><a href="https://www.facebook.com/peetneethlingconstruction/" target="_blank" rel="noopener">facebook.com/peetneethlingconstruction</a></div>
+        <div class="v">
+          <a href="https://www.facebook.com/peetneethlingconstruction/" target="_blank" rel="noopener" class="icon-btn fb" aria-label="Visit Facebook page" style="width:36px;height:36px;">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" style="width:17px;height:17px;"><path d="M13.5 21v-7.5h2.5l.4-3H13.5V8.5c0-.87.24-1.46 1.49-1.46H16.5V4.36C16.24 4.32 15.35 4.25 14.31 4.25c-2.16 0-3.64 1.32-3.64 3.75V10.5H8.2v3h2.47V21h2.83z"/></svg>
+          </a>
+        </div>
       </div>
     </div>
   </div>
