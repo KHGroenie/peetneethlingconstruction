@@ -235,7 +235,7 @@ a{
 }
 
 .hero-logo{
-  height:150px;
+  height:175px;
   margin:0 auto 20px;
 }
 
@@ -375,7 +375,7 @@ a{
 ===================================================== */
 
 .projects{
-  max-width:1200px;
+  max-width:1100px;
   margin:0 auto;
   padding:100px 40px;
   background:var(--cream);
@@ -594,13 +594,16 @@ a{
 .gallery-item{
   overflow:hidden;
   background:#111;
+  height:420px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
 }
 
 .gallery-item img{
   width:100%;
   height:100%;
-  min-height:250px;
-  object-fit:cover;
+  object-fit:contain;
   transition:transform .4s ease;
 }
 
@@ -610,10 +613,7 @@ a{
 
 .gallery-item:first-child{
   grid-column:span 2;
-}
-
-.gallery-item:first-child img{
-  min-height:450px;
+  height:560px;
 }
 
 
@@ -722,8 +722,6 @@ a{
     padding:12px 20px;
   }
 
-  /* MOBILE NAV FIX */
-
   .site-header nav.nav-left,
   .site-header nav.nav-right{
     display:none;
@@ -809,7 +807,7 @@ a{
   }
 
   .hero-logo{
-    height:70px;
+    height:85px;
     margin-bottom:14px;
   }
 
@@ -879,16 +877,13 @@ a{
     grid-template-columns:1fr;
   }
 
+  .gallery-item{
+    height:300px;
+  }
+
   .gallery-item:first-child{
     grid-column:auto;
-  }
-
-  .gallery-item:first-child img{
-    min-height:280px;
-  }
-
-  .gallery-item img{
-    min-height:220px;
+    height:360px;
   }
 
   .lightbox-content{
@@ -1821,25 +1816,25 @@ var projectData = {
 
     images: [
 
-     "oldroadwine3.jpeg",
-"oldroadwine4.jpeg",
-"oldroadwine13.6.jpeg",
-"oldroadwine11.jpeg",
-"oldroadwine5.jpeg",
-"oldroadwine6.jpeg",
-"oldroadwine7.jpeg",
-"oldroadwine8.jpeg",
-"oldroadwine9.jpeg",
-"oldroadwine10.jpeg",
-"oldroadwine13.1.jpeg",
-"oldroadwine13.3.jpeg",
-"oldroadwine13.4.jpeg",
-"oldroadwine13.5.jpeg",
-"oldroadwine14.jpeg",
-"oldroadwine15.jpeg",
-"oldroadwine16.jpeg",
-"oldroadwine17.jpeg",
-"oldroadwine18.jpeg"
+      "oldroadwine3.jpeg",
+      "oldroadwine4.jpeg",
+      "oldroadwine13.6.jpeg",
+      "oldroadwine11.jpeg",
+      "oldroadwine5.jpeg",
+      "oldroadwine6.jpeg",
+      "oldroadwine7.jpeg",
+      "oldroadwine8.jpeg",
+      "oldroadwine9.jpeg",
+      "oldroadwine10.jpeg",
+      "oldroadwine13.1.jpeg",
+      "oldroadwine13.3.jpeg",
+      "oldroadwine13.4.jpeg",
+      "oldroadwine13.5.jpeg",
+      "oldroadwine14.jpeg",
+      "oldroadwine15.jpeg",
+      "oldroadwine16.jpeg",
+      "oldroadwine17.jpeg",
+      "oldroadwine18.jpeg"
 
     ]
 
@@ -1860,28 +1855,29 @@ var projectData = {
       "Building and renovation work captured across the different stages of the project.",
 
     images: [
-"lanzarac8.jpeg",
-"lanzarac9.jpeg",
-"lanzarac14.jpeg",
-"lanzarac15.jpeg",
-"lanzarac16.jpeg",
-"lanzarac16 (2).jpeg",
-"lanzarac13.jpeg",
-"lanzarac11.jpeg",
-"lanzarac10.jpeg",
-"lanzarac2.jpeg",
-"2lanzarac10.jpeg",
-"1lanzarac11.jpeg",
-"1lanzarac10.jpeg",
-"laanzarac2.jpeg",
-"lanzarac12.jpeg",
-"lanzarac1.jpeg",
-"lanzarac3.jpeg",
-"lanzarac4.jpeg",
-"lanzarac5.jpeg",
-"lanzarac6.jpeg",
-"lanzarac7.jpeg",
-"lanzarac17.jpeg"
+
+      "lanzarac8.jpeg",
+      "lanzarac9.jpeg",
+      "lanzarac14.jpeg",
+      "lanzarac15.jpeg",
+      "lanzarac16.jpeg",
+      "lanzarac16 (2).jpeg",
+      "lanzarac13.jpeg",
+      "lanzarac11.jpeg",
+      "lanzarac10.jpeg",
+      "lanzarac2.jpeg",
+      "2lanzarac10.jpeg",
+      "1lanzarac11.jpeg",
+      "1lanzarac10.jpeg",
+      "laanzarac2.jpeg",
+      "lanzarac12.jpeg",
+      "lanzarac1.jpeg",
+      "lanzarac3.jpeg",
+      "lanzarac4.jpeg",
+      "lanzarac5.jpeg",
+      "lanzarac6.jpeg",
+      "lanzarac7.jpeg",
+      "lanzarac17.jpeg"
 
     ]
 
@@ -1902,13 +1898,14 @@ var projectData = {
       "Renovation and building work documented through the project stages.",
 
     images: [
-"deoude7.jpeg",
-"deoude5.jpeg",
-"deoude6.jpeg",
-"deoude4.jpeg",
-"deoude3.jpeg",
-"deoude2.jpeg",
-"deoude1.jpeg"
+
+      "deoude7.jpeg",
+      "deoude5.jpeg",
+      "deoude6.jpeg",
+      "deoude4.jpeg",
+      "deoude3.jpeg",
+      "deoude2.jpeg",
+      "deoude1.jpeg"
 
     ]
 
@@ -1930,23 +1927,23 @@ var projectData = {
 
     images: [
 
-     "bellingham13.jpeg",
-"bellingham15.jpeg",
-"bellingham9.jpeg",
-"bellingham8.jpeg",
-"bellingham7.jpeg",
-"bellingham12.jpeg",
-"bellingham10.jpeg",
-"bellingham14.jpeg",
-"bellingham16.jpeg",
-"bellingham17.jpeg",
-"bellingham5.jpeg",
-"bellingham6.jpeg",
-"bellingham4.jpeg",
-"bellingham3.jpeg",
-"bellingham2.jpeg",
-"bellingham11.jpeg",
-"bellingham1.jpeg"
+      "bellingham13.jpeg",
+      "bellingham15.jpeg",
+      "bellingham9.jpeg",
+      "bellingham8.jpeg",
+      "bellingham7.jpeg",
+      "bellingham12.jpeg",
+      "bellingham10.jpeg",
+      "bellingham14.jpeg",
+      "bellingham16.jpeg",
+      "bellingham17.jpeg",
+      "bellingham5.jpeg",
+      "bellingham6.jpeg",
+      "bellingham4.jpeg",
+      "bellingham3.jpeg",
+      "bellingham2.jpeg",
+      "bellingham11.jpeg",
+      "bellingham1.jpeg"
 
     ]
 
@@ -2015,21 +2012,22 @@ var projectData = {
       "Construction and building work documented through the different stages of the project.",
 
     images: [
-"carletta2.jpeg",
-"carletta3.jpeg",
-"carletta4.jpeg",
-"carletta5.jpeg",
-"carletta6.jpeg",
-"carletta8.jpeg",
-"carletta9.jpeg",
-"carletta10.jpeg",
-"carletta11.jpeg",
-"carletta12.jpeg",
-"carletta13.jpeg",
-"carletta14.jpeg",
-"carletta15.jpeg",
-"carletta7.jpeg",
-"carletta 1.jpeg"
+
+      "carletta2.jpeg",
+      "carletta3.jpeg",
+      "carletta4.jpeg",
+      "carletta5.jpeg",
+      "carletta6.jpeg",
+      "carletta8.jpeg",
+      "carletta9.jpeg",
+      "carletta10.jpeg",
+      "carletta11.jpeg",
+      "carletta12.jpeg",
+      "carletta13.jpeg",
+      "carletta14.jpeg",
+      "carletta15.jpeg",
+      "carletta7.jpeg",
+      "carletta 1.jpeg"
 
     ]
 
@@ -2119,10 +2117,6 @@ document.querySelectorAll('.view-project').forEach(function(button){
       img.loading =
         index === 0 ? 'eager' : 'lazy';
 
-
-      /* If an image cannot be found,
-         hide the broken image instead of
-         showing an ugly broken-image icon. */
 
       img.onerror = function(){
 
