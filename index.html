@@ -3,7 +3,29 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Peet Neethling Construction — Building consultant & contractor</title>
+<title>Peet Neethling Construction | Building Consultant & Contractor, Klein Brak River</title>
+<meta name="description" content="Peet Neethling Construction — building consultant and contractor serving Klein Brak River and the Garden Route. Renovations, custom homes, remodeling and full project management.">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "GeneralContractor",
+  "name": "Peet Neethling Construction",
+  "description": "Building consultant and contractor serving Klein Brak River and the Garden Route, specialising in renovations, custom homes and full project management.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "15 Hoy St",
+    "addressLocality": "Klein Brak River",
+    "postalCode": "6503",
+    "addressCountry": "ZA"
+  },
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+    "closes": "19:00"
+  },
+  "areaServed": "Garden Route"
+}
+</script>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap');
 
@@ -22,15 +44,24 @@
 
   /* header */
   .site-header{
-    display:flex;align-items:center;justify-content:space-between;
-    padding:20px 40px;
+    display:grid;grid-template-columns:1fr auto 1fr;align-items:center;
+    padding:14px 40px;
     background:var(--cream-dark);
     border-bottom:1px solid rgba(30,42,56,0.1);
   }
-  .site-header .logo{height:44px;}
   .site-header nav{display:flex;gap:32px;}
+  .site-header .nav-left{justify-self:start;}
+  .site-header .nav-right{justify-self:end;}
   .site-header nav a{font-size:14px;font-weight:500;color:var(--ink);}
   .site-header nav a:hover{color:var(--brown-dark);}
+  .logo-wrap{
+    justify-self:center;
+    background:#fff;
+    padding:8px 20px;
+    border-radius:4px;
+    border:1px solid rgba(30,42,56,0.08);
+  }
+  .site-header .logo{height:64px;display:block;}
 
   /* hero */
   .hero{position:relative;height:100vh;min-height:560px;overflow:hidden;background:var(--ink);}
@@ -73,8 +104,13 @@
     .hero-diamond-inner{transform:none;width:100%;}
     .hero h1{font-size:28px;}
     .hero-quad.tr,.hero-quad.tl{height:35%;}
-    .site-header{padding:16px 20px;flex-direction:column;gap:12px;}
-    .site-header nav{gap:20px;}
+    .site-header{
+      display:flex;flex-direction:column;gap:10px;
+      padding:12px 20px;
+    }
+    .logo-wrap{justify-self:auto;order:-1;}
+    .site-header .logo{height:52px;}
+    .site-header nav{gap:20px;justify-self:auto;}
   }
 
   /* about */
@@ -110,6 +146,33 @@
   @media (max-width:760px){
     .about{grid-template-columns:1fr;padding:64px 24px;gap:36px;}
     .facts{grid-template-columns:1fr;gap:18px;}
+  }
+
+  /* services */
+  .services{max-width:1100px;margin:0 auto;padding:80px 40px;background:var(--cream);}
+  .services .eyebrow{
+    font-weight:600;font-size:13px;letter-spacing:0.02em;
+    color:var(--brown-dark);margin-bottom:14px;text-align:center;
+  }
+  .services h2{
+    font-family:'Playfair Display',serif;font-weight:700;
+    font-size:32px;color:var(--ink);text-align:center;margin-bottom:48px;
+  }
+  .service-grid{
+    display:grid;grid-template-columns:repeat(3,1fr);gap:40px;
+  }
+  .service-group h3{
+    font-family:'Playfair Display',serif;font-weight:600;
+    font-size:18px;color:var(--ink);margin-bottom:16px;
+    padding-bottom:10px;border-bottom:1px solid rgba(30,42,56,0.12);
+  }
+  .service-group ul{list-style:none;}
+  .service-group li{
+    font-size:14px;line-height:2;color:var(--body);
+  }
+  @media (max-width:760px){
+    .services{padding:56px 24px;}
+    .service-grid{grid-template-columns:1fr;gap:28px;}
   }
 
   /* projects */
@@ -157,9 +220,14 @@
 <body>
 
 <header class="site-header">
-  <img class="logo" src="logo.jpg" alt="Peet Neethling Construction">
-  <nav>
+  <nav class="nav-left">
     <a href="#about">About</a>
+    <a href="#services">Services</a>
+  </nav>
+  <div class="logo-wrap">
+    <img class="logo" src="logo.png" alt="Peet Neethling Construction">
+  </div>
+  <nav class="nav-right">
     <a href="#projects">Projects</a>
     <a href="#contact">Contact</a>
   </nav>
@@ -181,27 +249,52 @@
 
 <section class="about" id="about">
   <div class="photo">
-    <img src="peet-on-site.jpg" alt="Peet Neethling on a building site in Klein Brak River">
+    <img src="peet-about.jpg" alt="Peet Neethling on a building site in Klein Brak River">
   </div>
   <div class="about-content">
     <p class="eyebrow">About Peet</p>
     <h2>Local knowledge, hands-on building.</h2>
     <p>Peet Neethling has been building and consulting on homes in Klein Brak River and the surrounding coastal towns for years, working directly with homeowners from the first site visit through to the final coat of paint.</p>
     <p>Every job starts with a walk of the site — understanding the ground, the wind, the neighbours, and what the client actually needs — before a single quote goes out.</p>
+  </div>
+</section>
 
-    <div class="facts">
-      <div>
-        <p class="fact-label">Address</p>
-        <p class="fact-value">15 Hoy St<br>Klein Brak River, 6503</p>
-      </div>
-      <div>
-        <p class="fact-label">Hours</p>
-        <p class="fact-value">Mon–Fri<br>Open during the week, closes 7pm</p>
-      </div>
-      <div>
-        <p class="fact-label">On-site</p>
-        <p class="fact-value">Consultations across the Garden Route</p>
-      </div>
+<section class="services" id="services">
+  <p class="eyebrow">Services</p>
+  <h2>What Peet does</h2>
+  <div class="service-grid">
+    <div class="service-group">
+      <h3>Project management</h3>
+      <ul>
+        <li>Construction management</li>
+        <li>Pre-construction planning</li>
+        <li>Project estimation</li>
+        <li>Value engineering</li>
+        <li>Contract management</li>
+        <li>Change orders</li>
+        <li>Subcontracting</li>
+        <li>Process scheduling</li>
+      </ul>
+    </div>
+    <div class="service-group">
+      <h3>Renovations & custom builds</h3>
+      <ul>
+        <li>Custom homes</li>
+        <li>Residential homes</li>
+        <li>Remodeling</li>
+        <li>Renovation</li>
+        <li>Bathrooms</li>
+        <li>Decks</li>
+      </ul>
+    </div>
+    <div class="service-group">
+      <h3>Trades & building</h3>
+      <ul>
+        <li>Carpentry</li>
+        <li>Concrete</li>
+        <li>Drywall</li>
+        <li>Green building</li>
+      </ul>
     </div>
   </div>
 </section>
