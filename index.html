@@ -54,14 +54,12 @@
   .site-header .nav-right{justify-self:end;}
   .site-header nav a{font-size:14px;font-weight:500;color:var(--ink);}
   .site-header nav a:hover{color:var(--brown-dark);}
-  .logo-wrap{
+  .wordmark{
     justify-self:center;
-    background:#fff;
-    padding:8px 20px;
-    border-radius:4px;
-    border:1px solid rgba(30,42,56,0.08);
+    font-family:'Playfair Display',serif;
+    font-weight:700;font-size:18px;color:var(--ink);
+    white-space:nowrap;
   }
-  .site-header .logo{height:64px;display:block;}
 
   /* hero */
   .hero{position:relative;height:100vh;min-height:560px;overflow:hidden;background:var(--ink);}
@@ -83,6 +81,10 @@
     transform:rotate(-45deg);
     text-align:center;
     width:78%;
+  }
+  .hero-logo{
+    height:110px;
+    margin:0 auto 18px;
   }
   .hero-eyebrow{
     font-size:14px;font-weight:600;color:var(--brown-dark);
@@ -108,9 +110,9 @@
       display:flex;flex-direction:column;gap:10px;
       padding:12px 20px;
     }
-    .logo-wrap{justify-self:auto;order:-1;}
-    .site-header .logo{height:52px;}
+    .wordmark{font-size:16px;}
     .site-header nav{gap:20px;justify-self:auto;}
+    .hero-logo{height:80px;margin-bottom:12px;}
   }
 
   /* about */
@@ -224,9 +226,7 @@
     <a href="#about">About</a>
     <a href="#services">Services</a>
   </nav>
-  <div class="logo-wrap">
-    <img class="logo" src="logo.jpg" alt="Peet Neethling Construction">
-  </div>
+  <a href="#" class="wordmark">Peet Neethling Construction</a>
   <nav class="nav-right">
     <a href="#projects">Projects</a>
     <a href="#contact">Contact</a>
@@ -240,6 +240,7 @@
   <div class="hero-quad br"></div>
   <div class="hero-diamond">
     <div class="hero-diamond-inner">
+      <img class="hero-logo" src="logo.jpg" alt="Peet Neethling Construction logo">
       <p class="hero-eyebrow">Little Brak River & the Garden Route</p>
       <h1>Peet Neethling Construction</h1>
       <p class="hero-sub">Building consultant & contractor</p>
@@ -249,13 +250,13 @@
 
 <section class="about" id="about">
   <div class="photo">
-    <img src="peet-about.jpg" alt="Peet Neethling on a building site in Klein Brak River">
+    <img src="peet-on-site.jpg" alt="Peet Neethling on a building site in Klein Brak River">
   </div>
   <div class="about-content">
     <p class="eyebrow">About Peet</p>
     <h2>Local knowledge, hands-on building.</h2>
     <p>Peet Neethling has been building and consulting on homes in Klein Brak River and the surrounding coastal towns for years, working directly with homeowners from the first site visit through to the final coat of paint.</p>
-    <p>Every job starts with a site walk — understanding the ground, the wind, the neighbours, and what the client actually needs — before a single quote goes out.</p>
+    <p>Every job starts with a walk of the site — understanding the ground, the wind, the neighbours, and what the client actually needs — before a single quote goes out.</p>
   </div>
 </section>
 
