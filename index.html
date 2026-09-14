@@ -1,18 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Peet Neethling Construction (Pty) Ltd | Heritage Restoration & Custom Homes, Mossel Bay</title>
-<meta name="description" content="Peet Neethling Construction (Pty) Ltd — heritage building restoration and modern custom homes, based in Mossel Bay and serving the Garden Route and Cape Winelands.">
+
+<title>Peet Neethling Construction (Pty) Ltd | Heritage Restoration & Custom Homes</title>
+
+<meta name="description" content="Peet Neethling Construction (Pty) Ltd — heritage building restoration, renovations and modern custom homes, based in Mossel Bay and serving the Garden Route and Cape Winelands.">
+
+<link rel="icon" type="image/jpeg" href="favicon.jpg">
+
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "GeneralContractor",
   "name": "Peet Neethling Construction (Pty) Ltd",
-  "description": "Heritage building restoration and modern custom home construction, based in Mossel Bay and serving the Garden Route and Cape Winelands.",
+  "description": "Heritage building restoration, renovations and modern custom home construction, based in Mossel Bay and serving the Garden Route and Cape Winelands.",
   "email": "peetneethlingcon@gmail.com",
-  "telephone": "+27847456624",
+  "telephone": "+27627451461",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "15 Hoy St",
@@ -22,317 +29,1120 @@
   },
   "openingHoursSpecification": {
     "@type": "OpeningHoursSpecification",
-    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+    "dayOfWeek": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday"
+    ],
     "closes": "19:00"
   },
-  "areaServed": ["Mossel Bay","Knysna","George","Franschhoek","Stellenbosch","Cape Town","Paarl","Wellington"]
+  "areaServed": [
+    "Mossel Bay",
+    "Knysna",
+    "George",
+    "Franschhoek",
+    "Stellenbosch",
+    "Cape Town",
+    "Paarl",
+    "Wellington"
+  ]
 }
 </script>
+
+
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap');
 
-  :root{
-    --cream:#F0ECE1;
-    --cream-dark:#E4DECC;
-    --ink:#1E2A38;
-    --brown:#8A6A4A;
-    --brown-dark:#6B4F35;
-    --body:#4B4B45;
-  }
-  html{scroll-behavior:smooth;}
-  *{box-sizing:border-box;margin:0;padding:0;}
-  body{font-family:'Inter',sans-serif;background:var(--cream-dark);color:var(--body);}
-  img{display:block;max-width:100%;}
-  a{color:inherit;text-decoration:none;}
+/* =====================================================
+   GENERAL
+===================================================== */
 
-  /* header */
-  .site-header{
-    display:grid;grid-template-columns:1fr auto 1fr;align-items:center;
-    padding:14px 40px;
-    background:var(--cream-dark);
-    border-bottom:1px solid rgba(30,42,56,0.1);
-  }
-  .site-header nav{display:flex;gap:32px;}
-  .site-header .nav-left{justify-self:start;}
-  .site-header .nav-right{justify-self:end;}
-  .site-header nav a{font-size:14px;font-weight:500;color:var(--ink);}
-  .site-header nav a:hover{color:var(--brown-dark);}
-  .wordmark{
-    justify-self:center;
-    font-family:'Playfair Display',serif;
-    font-weight:700;font-size:16px;color:var(--ink);
-    text-align:center;
-  }
-  .menu-toggle{
-    display:none;background:none;border:none;cursor:pointer;
-    color:var(--ink);padding:4px;
-  }
-  .mobile-nav{display:none;}
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap');
 
-  /* hero */
-  .hero{position:relative;height:100vh;min-height:560px;overflow:hidden;background:var(--ink);}
-  .hero-quad{position:absolute;width:50%;height:50%;background-size:cover;background-position:center;}
-  .hero-quad::after{content:'';position:absolute;inset:0;background:rgba(10,14,20,0.28);}
-  .hero-quad.tl{top:0;left:0;background-image:url('project1.jpg');}
-  .hero-quad.tr{top:0;right:0;background-image:url('build.jpg');}
-  .hero-quad.bl{bottom:0;left:0;background-image:url('peet1.jpg');}
-  .hero-quad.br{bottom:0;right:0;background-image:url('project2.jpg');}
-
-  .hero-diamond{
-    position:absolute;top:50%;left:50%;
-    width:620px;height:620px;
-    background:var(--cream);
-    transform:translate(-50%,-50%) rotate(45deg);
-    display:flex;align-items:center;justify-content:center;
-  }
-  .hero-diamond-inner{
-    transform:rotate(-45deg);
-    text-align:center;
-    width:78%;
-  }
-  .hero-logo{
-    height:150px;
-    margin:0 auto 20px;
-  }
-  .hero-eyebrow{
-    font-size:14px;font-weight:600;color:var(--brown-dark);
-    margin-bottom:16px;
-  }
-  .hero h1{
-    font-family:'Playfair Display',serif;font-weight:700;
-    font-size:40px;color:var(--ink);line-height:1.2;
-    margin-bottom:14px;
-  }
-  .hero-sub{font-size:16px;color:var(--body);}
-
-  @media (max-width:760px){
-    .hero{
-      height:100vh;min-height:520px;overflow:hidden;
-      display:flex;align-items:center;justify-content:center;
-      background:var(--ink);
-    }
-    .hero-photos{display:none;}
-    .hero-diamond{
-      position:static;
-      width:88vw;height:88vw;
-      max-width:400px;max-height:400px;
-      transform:rotate(45deg);
-    }
-    .hero-diamond-inner{transform:rotate(-45deg);width:72%;}
-    .hero-logo{height:70px;margin-bottom:14px;}
-    .hero-eyebrow{font-size:12px;margin-bottom:10px;}
-    .hero h1{font-size:22px;margin-bottom:10px;}
-    .hero-sub{font-size:13px;}
-
-    .site-header{
-  display:flex;align-items:center;justify-content:space-between;
-  padding:12px 20px;
+:root{
+  --cream:#F0ECE1;
+  --cream-dark:#E4DECC;
+  --ink:#1E2A38;
+  --brown:#8A6A4A;
+  --brown-dark:#6B4F35;
+  --body:#4B4B45;
 }
-.menu-toggle{display:flex;align-items:center;justify-content:center;}
-.site-header .nav-left,
-.site-header .nav-right{
+
+html{
+  scroll-behavior:smooth;
+}
+
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+body{
+  font-family:'Inter',sans-serif;
+  background:var(--cream-dark);
+  color:var(--body);
+}
+
+body.no-scroll{
+  overflow:hidden;
+}
+
+img{
+  display:block;
+  max-width:100%;
+}
+
+a{
+  color:inherit;
+  text-decoration:none;
+}
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.site-header{
+  display:grid;
+  grid-template-columns:1fr auto 1fr;
+  align-items:center;
+  padding:14px 40px;
+  background:var(--cream-dark);
+  border-bottom:1px solid rgba(30,42,56,0.1);
+}
+
+.site-header nav{
+  display:flex;
+  gap:32px;
+}
+
+.nav-left{
+  justify-self:start;
+}
+
+.nav-right{
+  justify-self:end;
+}
+
+.site-header nav a{
+  font-size:14px;
+  font-weight:500;
+  color:var(--ink);
+}
+
+.site-header nav a:hover{
+  color:var(--brown-dark);
+}
+
+.wordmark{
+  justify-self:center;
+  font-family:'Playfair Display',serif;
+  font-weight:700;
+  font-size:16px;
+  color:var(--ink);
+  text-align:center;
+}
+
+.menu-toggle{
+  display:none;
+  background:none;
+  border:none;
+  cursor:pointer;
+  color:var(--ink);
+  padding:4px;
+}
+
+.mobile-nav{
   display:none;
 }
-    .wordmark{font-size:15px;flex:1;text-align:center;}
-    .mobile-nav{
-      background:var(--cream-dark);
-      border-bottom:1px solid rgba(30,42,56,0.1);
-      padding:4px 20px 12px;
-      flex-direction:column;
-    }
-    .mobile-nav.open{display:flex;}
-    .mobile-nav a{
-      padding:12px 0;font-size:15px;color:var(--ink);
-      border-bottom:1px solid rgba(30,42,56,0.08);
-    }
-    .mobile-nav a:last-child{border-bottom:none;}
+
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.hero{
+  position:relative;
+  height:100vh;
+  min-height:560px;
+  overflow:hidden;
+  background:var(--ink);
+}
+
+.hero-photos{
+  position:absolute;
+  inset:0;
+}
+
+.hero-quad{
+  position:absolute;
+  width:50%;
+  height:50%;
+  background-size:cover;
+  background-position:center;
+}
+
+.hero-quad::after{
+  content:'';
+  position:absolute;
+  inset:0;
+  background:rgba(10,14,20,0.28);
+}
+
+.hero-quad.tl{
+  top:0;
+  left:0;
+  background-image:url('project1.jpg');
+}
+
+.hero-quad.tr{
+  top:0;
+  right:0;
+  background-image:url('build.jpg');
+}
+
+.hero-quad.bl{
+  bottom:0;
+  left:0;
+  background-image:url('peet1.jpg');
+}
+
+.hero-quad.br{
+  bottom:0;
+  right:0;
+  background-image:url('project2.jpg');
+}
+
+.hero-diamond{
+  position:absolute;
+  top:50%;
+  left:50%;
+  width:620px;
+  height:620px;
+  background:var(--cream);
+  transform:translate(-50%,-50%) rotate(45deg);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.hero-diamond-inner{
+  transform:rotate(-45deg);
+  text-align:center;
+  width:78%;
+}
+
+.hero-logo{
+  height:150px;
+  margin:0 auto 20px;
+}
+
+.hero-eyebrow{
+  font-size:14px;
+  font-weight:600;
+  color:var(--brown-dark);
+  margin-bottom:16px;
+}
+
+.hero h1{
+  font-family:'Playfair Display',serif;
+  font-weight:700;
+  font-size:40px;
+  color:var(--ink);
+  line-height:1.2;
+  margin-bottom:14px;
+}
+
+.hero-sub{
+  font-size:16px;
+  color:var(--body);
+}
+
+
+/* =====================================================
+   ABOUT
+===================================================== */
+
+.about{
+  max-width:1100px;
+  margin:0 auto;
+  padding:96px 40px;
+  display:grid;
+  grid-template-columns:0.85fr 1.15fr;
+  gap:64px;
+  align-items:center;
+  background:var(--cream);
+}
+
+.photo{
+  aspect-ratio:4/5;
+  border-radius:2px;
+  overflow:hidden;
+  border:1px solid rgba(30,42,56,0.1);
+}
+
+.photo img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+.about-content .eyebrow{
+  font-weight:600;
+  font-size:13px;
+  letter-spacing:0.02em;
+  color:var(--brown-dark);
+  margin-bottom:14px;
+}
+
+.about-content h2{
+  font-family:'Playfair Display',serif;
+  font-weight:700;
+  font-size:34px;
+  color:var(--ink);
+  margin-bottom:22px;
+  line-height:1.25;
+}
+
+.about-content p{
+  font-size:16px;
+  line-height:1.7;
+  margin-bottom:18px;
+  max-width:52ch;
+}
+
+
+/* =====================================================
+   SERVICES
+===================================================== */
+
+.services{
+  max-width:1100px;
+  margin:0 auto;
+  padding:80px 40px;
+  background:var(--cream);
+}
+
+.services .eyebrow{
+  font-weight:600;
+  font-size:13px;
+  letter-spacing:0.02em;
+  color:var(--brown-dark);
+  margin-bottom:14px;
+  text-align:center;
+}
+
+.services h2{
+  font-family:'Playfair Display',serif;
+  font-weight:700;
+  font-size:32px;
+  color:var(--ink);
+  text-align:center;
+  margin-bottom:48px;
+}
+
+.service-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:40px;
+}
+
+.service-group h3{
+  font-family:'Playfair Display',serif;
+  font-weight:600;
+  font-size:18px;
+  color:var(--ink);
+  margin-bottom:16px;
+  padding-bottom:10px;
+  border-bottom:1px solid rgba(30,42,56,0.12);
+}
+
+.service-group ul{
+  list-style:none;
+}
+
+.service-group li{
+  font-size:14px;
+  line-height:2;
+  color:var(--body);
+}
+
+
+/* =====================================================
+   PROJECTS
+===================================================== */
+
+.projects{
+  max-width:1200px;
+  margin:0 auto;
+  padding:100px 40px;
+  background:var(--cream);
+}
+
+.projects .eyebrow{
+  font-weight:600;
+  font-size:13px;
+  letter-spacing:0.02em;
+  color:var(--brown-dark);
+  margin-bottom:14px;
+  text-align:center;
+}
+
+.projects h2{
+  font-family:'Playfair Display',serif;
+  font-weight:700;
+  font-size:38px;
+  color:var(--ink);
+  text-align:center;
+  margin-bottom:18px;
+}
+
+.projects-intro{
+  max-width:650px;
+  margin:0 auto 55px;
+  text-align:center;
+  font-size:15px;
+  line-height:1.7;
+}
+
+
+/* =====================================================
+   PROJECT GRID
+===================================================== */
+
+.project-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:34px;
+}
+
+.project-card{
+  background:#fff;
+  border:1px solid rgba(30,42,56,0.08);
+  overflow:hidden;
+  transition:transform .3s ease, box-shadow .3s ease;
+}
+
+.project-card:hover{
+  transform:translateY(-5px);
+  box-shadow:0 18px 40px rgba(30,42,56,0.12);
+}
+
+.project-card-image{
+  position:relative;
+  aspect-ratio:16/10;
+  overflow:hidden;
+}
+
+.project-card-image img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  transition:transform .5s ease;
+}
+
+.project-card:hover .project-card-image img{
+  transform:scale(1.04);
+}
+
+.project-number{
+  position:absolute;
+  top:18px;
+  left:18px;
+  width:42px;
+  height:42px;
+  border-radius:50%;
+  background:rgba(240,236,225,.94);
+  color:var(--ink);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:12px;
+  font-weight:600;
+}
+
+.project-card-info{
+  padding:27px 30px 30px;
+}
+
+.project-location{
+  display:block;
+  font-size:11px;
+  text-transform:uppercase;
+  letter-spacing:.14em;
+  color:var(--brown-dark);
+  margin-bottom:9px;
+}
+
+.project-card h3{
+  font-family:'Playfair Display',serif;
+  font-size:27px;
+  color:var(--ink);
+  margin-bottom:10px;
+}
+
+.project-card p{
+  font-size:14px;
+  line-height:1.65;
+  margin-bottom:21px;
+}
+
+.view-project{
+  display:inline-flex;
+  align-items:center;
+  gap:9px;
+  border:0;
+  background:none;
+  color:var(--ink);
+  font-family:'Inter',sans-serif;
+  font-size:13px;
+  font-weight:600;
+  cursor:pointer;
+  padding:0;
+}
+
+.view-project span{
+  transition:transform .25s ease;
+}
+
+.view-project:hover span{
+  transform:translateX(5px);
+}
+
+
+/* =====================================================
+   PROJECT LIGHTBOX
+===================================================== */
+
+.project-lightbox{
+  position:fixed;
+  inset:0;
+  z-index:9999;
+  background:rgba(20,24,29,.98);
+  overflow-y:auto;
+  opacity:0;
+  visibility:hidden;
+  transition:opacity .3s ease;
+}
+
+.project-lightbox.active{
+  opacity:1;
+  visibility:visible;
+}
+
+.lightbox-close{
+  position:fixed;
+  top:20px;
+  right:25px;
+  z-index:10;
+  width:48px;
+  height:48px;
+  border:1px solid rgba(255,255,255,.35);
+  border-radius:50%;
+  background:rgba(0,0,0,.35);
+  color:#fff;
+  font-size:30px;
+  line-height:1;
+  cursor:pointer;
+}
+
+.lightbox-content{
+  width:min(1150px,90%);
+  margin:0 auto;
+  padding:95px 0 80px;
+}
+
+.lightbox-header{
+  max-width:700px;
+  margin-bottom:45px;
+  color:#fff;
+}
+
+.lightbox-header span{
+  font-size:11px;
+  text-transform:uppercase;
+  letter-spacing:.18em;
+  color:#C19A62;
+}
+
+.lightbox-header h2{
+  font-family:'Playfair Display',serif;
+  font-size:clamp(38px,5vw,64px);
+  font-weight:600;
+  margin:10px 0 14px;
+}
+
+.lightbox-header p{
+  color:rgba(255,255,255,.68);
+  font-size:15px;
+  line-height:1.7;
+}
+
+
+/* =====================================================
+   GALLERY
+===================================================== */
+
+.project-gallery{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:15px;
+}
+
+.gallery-item{
+  overflow:hidden;
+  background:#111;
+}
+
+.gallery-item img{
+  width:100%;
+  height:100%;
+  min-height:250px;
+  object-fit:cover;
+  transition:transform .4s ease;
+}
+
+.gallery-item:hover img{
+  transform:scale(1.02);
+}
+
+.gallery-item:first-child{
+  grid-column:span 2;
+}
+
+.gallery-item:first-child img{
+  min-height:450px;
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+.site-footer{
+  background:var(--ink);
+  color:var(--cream);
+  padding:56px 40px;
+}
+
+.footer-inner{
+  max-width:1100px;
+  margin:0 auto;
+  display:grid;
+  grid-template-columns:1.2fr 1fr 1fr 1fr;
+  gap:32px;
+}
+
+.footer-inner h3{
+  font-family:'Playfair Display',serif;
+  font-size:20px;
+  margin-bottom:10px;
+}
+
+.footer-inner p{
+  font-size:14px;
+  line-height:1.7;
+  color:rgba(240,236,225,.75);
+}
+
+.footer-label{
+  font-weight:600;
+  font-size:13px;
+  margin-bottom:6px;
+  color:var(--cream);
+}
+
+.footer-inner a{
+  color:var(--cream);
+}
+
+.footer-inner a:hover{
+  color:#C19A62;
+}
+
+.footer-bottom{
+  max-width:1100px;
+  margin:36px auto 0;
+  padding-top:24px;
+  border-top:1px solid rgba(240,236,225,.15);
+  display:flex;
+  align-items:center;
+  gap:24px;
+  flex-wrap:wrap;
+}
+
+.footer-bottom a{
+  font-size:13px;
+  font-weight:500;
+  color:var(--cream);
+}
+
+.footer-bottom a:hover{
+  color:var(--brown);
+}
+
+.social-link{
+  display:inline-flex;
+  align-items:center;
+}
+
+
+/* =====================================================
+   WHATSAPP
+===================================================== */
+
+.whatsapp-float{
+  position:fixed;
+  bottom:24px;
+  right:24px;
+  width:56px;
+  height:56px;
+  border-radius:50%;
+  background:#25D366;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  box-shadow:0 4px 12px rgba(0,0,0,.25);
+  z-index:100;
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width:760px){
+
+  .site-header{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:12px 20px;
   }
 
-  /* about */
+  /* MOBILE NAV FIX */
+
+  .site-header nav.nav-left,
+  .site-header nav.nav-right{
+    display:none;
+  }
+
+  .menu-toggle{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+
+  .wordmark{
+    font-size:14px;
+    flex:1;
+    text-align:center;
+    padding:0 10px;
+  }
+
+  .mobile-nav{
+    display:none;
+    background:var(--cream-dark);
+    border-bottom:1px solid rgba(30,42,56,0.1);
+    padding:4px 20px 12px;
+    flex-direction:column;
+  }
+
+  .mobile-nav.open{
+    display:flex;
+  }
+
+  .mobile-nav a{
+    padding:12px 0;
+    font-size:15px;
+    color:var(--ink);
+    border-bottom:1px solid rgba(30,42,56,0.08);
+  }
+
+  .mobile-nav a:last-child{
+    border-bottom:none;
+  }
+
+
+  /* MOBILE HERO */
+
+  .hero{
+    height:calc(100vh - 52px);
+    min-height:520px;
+  }
+
+  .hero-photos{
+    display:block;
+  }
+
+  .hero-quad{
+    display:none;
+  }
+
+  .hero-photos::before{
+    content:'';
+    position:absolute;
+    inset:0;
+    background-image:url('project1.jpg');
+    background-size:cover;
+    background-position:center;
+  }
+
+  .hero-photos::after{
+    content:'';
+    position:absolute;
+    inset:0;
+    background:rgba(10,14,20,.42);
+  }
+
+  .hero-diamond{
+    width:88vw;
+    height:88vw;
+    max-width:400px;
+    max-height:400px;
+  }
+
+  .hero-diamond-inner{
+    width:72%;
+  }
+
+  .hero-logo{
+    height:70px;
+    margin-bottom:14px;
+  }
+
+  .hero-eyebrow{
+    font-size:12px;
+    margin-bottom:10px;
+  }
+
+  .hero h1{
+    font-size:22px;
+    margin-bottom:10px;
+  }
+
+  .hero-sub{
+    font-size:13px;
+  }
+
+
+  /* ABOUT */
+
   .about{
-    max-width:1100px;margin:0 auto;padding:96px 40px;
-    display:grid;grid-template-columns:0.85fr 1.15fr;
-    gap:64px;align-items:center;background:var(--cream);
+    grid-template-columns:1fr;
+    padding:64px 24px;
+    gap:36px;
   }
-  .photo{
-    aspect-ratio:4/5;border-radius:2px;overflow:hidden;
-    border:1px solid rgba(30,42,56,0.1);
-  }
-  .photo img{width:100%;height:100%;object-fit:cover;}
 
-  .about-content .eyebrow{
-    font-weight:600;font-size:13px;letter-spacing:0.02em;
-    color:var(--brown-dark);margin-bottom:14px;
-  }
   .about-content h2{
-    font-family:'Playfair Display',serif;font-weight:700;
-    font-size:34px;color:var(--ink);margin-bottom:22px;line-height:1.25;
-  }
-  .about-content p{font-size:16px;line-height:1.7;margin-bottom:18px;max-width:52ch;}
-
-  .facts{
-    display:grid;grid-template-columns:repeat(3,1fr);gap:24px;
-    margin-top:32px;padding-top:28px;
-    border-top:1px solid rgba(30,42,56,0.12);
-  }
-  .fact-label{font-weight:600;font-size:13px;color:var(--ink);margin-bottom:4px;}
-  .fact-value{font-size:14px;line-height:1.5;}
-
-  @media (max-width:760px){
-    .about{grid-template-columns:1fr;padding:64px 24px;gap:36px;}
-    .facts{grid-template-columns:1fr;gap:18px;}
+    font-size:29px;
   }
 
-  /* services */
-  .services{max-width:1100px;margin:0 auto;padding:80px 40px;background:var(--cream);}
-  .services .eyebrow{
-    font-weight:600;font-size:13px;letter-spacing:0.02em;
-    color:var(--brown-dark);margin-bottom:14px;text-align:center;
+
+  /* SERVICES */
+
+  .services{
+    padding:56px 24px;
   }
-  .services h2{
-    font-family:'Playfair Display',serif;font-weight:700;
-    font-size:32px;color:var(--ink);text-align:center;margin-bottom:48px;
-  }
+
   .service-grid{
-    display:grid;grid-template-columns:repeat(3,1fr);gap:40px;
-  }
-  .service-group h3{
-    font-family:'Playfair Display',serif;font-weight:600;
-    font-size:18px;color:var(--ink);margin-bottom:16px;
-    padding-bottom:10px;border-bottom:1px solid rgba(30,42,56,0.12);
-  }
-  .service-group ul{list-style:none;}
-  .service-group li{
-    font-size:14px;line-height:2;color:var(--body);
-  }
-  @media (max-width:760px){
-    .services{padding:56px 24px;}
-    .service-grid{grid-template-columns:1fr;gap:28px;}
+    grid-template-columns:1fr;
+    gap:28px;
   }
 
-  /* projects */
-  .projects{max-width:1100px;margin:0 auto;padding:80px 40px;}
-  .projects .eyebrow{
-    font-weight:600;font-size:13px;letter-spacing:0.02em;
-    color:var(--brown-dark);margin-bottom:14px;text-align:center;
+
+  /* PROJECTS */
+
+  .projects{
+    padding:70px 24px;
   }
+
   .projects h2{
-    font-family:'Playfair Display',serif;font-weight:700;
-    font-size:32px;color:var(--ink);text-align:center;margin-bottom:48px;
+    font-size:32px;
   }
+
   .project-grid{
-    display:grid;grid-template-columns:repeat(3,1fr);gap:24px;
-  }
-  .project-card{aspect-ratio:4/3;overflow:hidden;border-radius:2px;}
-  .project-card img{width:100%;height:100%;object-fit:cover;transition:transform 0.4s ease;}
-  .project-card:hover img{transform:scale(1.05);}
-
-  @media (max-width:760px){
-    .projects{padding:56px 24px;}
-    .project-grid{grid-template-columns:1fr;}
+    grid-template-columns:1fr;
+    gap:24px;
   }
 
-  /* footer */
-  .site-footer{
-    background:var(--ink);color:var(--cream);
-    padding:56px 40px;
+  .project-card-info{
+    padding:24px;
   }
+
+
+  /* GALLERY */
+
+  .project-gallery{
+    grid-template-columns:1fr;
+  }
+
+  .gallery-item:first-child{
+    grid-column:auto;
+  }
+
+  .gallery-item:first-child img{
+    min-height:280px;
+  }
+
+  .gallery-item img{
+    min-height:220px;
+  }
+
+  .lightbox-content{
+    width:88%;
+    padding-top:85px;
+  }
+
+  .lightbox-close{
+    right:17px;
+    top:17px;
+  }
+
+
+  /* FOOTER */
+
   .footer-inner{
-    max-width:1100px;margin:0 auto;
-    display:grid;grid-template-columns:1.2fr 1fr 1fr 1fr;gap:32px;
+    grid-template-columns:1fr;
+    gap:28px;
   }
-  .footer-inner h3{
-    font-family:'Playfair Display',serif;font-size:20px;margin-bottom:10px;
-  }
-  .footer-inner p{font-size:14px;line-height:1.7;color:rgba(240,236,225,0.75);}
-  .footer-label{font-weight:600;font-size:13px;margin-bottom:6px;color:var(--cream);}
 
-  @media (max-width:760px){
-    .footer-inner{grid-template-columns:1fr;gap:28px;}
+  .site-footer{
+    padding:50px 24px;
   }
-  .footer-bottom{
-    max-width:1100px;margin:36px auto 0;padding-top:24px;
-    border-top:1px solid rgba(240,236,225,0.15);
-    display:flex;align-items:center;gap:24px;flex-wrap:wrap;
-  }
-  .footer-bottom a{font-size:13px;font-weight:500;color:var(--cream);}
-  .footer-bottom a:hover{color:var(--brown);}
-  .social-link{display:inline-flex;align-items:center;}
 
   .whatsapp-float{
-    position:fixed;bottom:24px;right:24px;
-    width:56px;height:56px;border-radius:50%;
-    background:#25D366;
-    display:flex;align-items:center;justify-content:center;
-    box-shadow:0 4px 12px rgba(0,0,0,0.25);
-    z-index:100;
+    width:50px;
+    height:50px;
+    bottom:16px;
+    right:16px;
   }
-  @media (max-width:760px){
-    .whatsapp-float{width:50px;height:50px;bottom:16px;right:16px;}
-  }
+
+}
+
 </style>
+
 </head>
-  <link rel="icon" type="image/png" href="favicon.jpg">
+
+
 <body>
 
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
 <header class="site-header">
-  <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
-    <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+
+  <button
+    class="menu-toggle"
+    id="menuToggle"
+    aria-label="Toggle menu"
+    aria-expanded="false"
+  >
+
+    <svg
+      viewBox="0 0 24 24"
+      width="24"
+      height="24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2"
+      stroke-linecap="round"
+    >
+
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+
+    </svg>
+
   </button>
+
+
   <nav class="nav-left">
+
     <a href="#about">About</a>
+
     <a href="#services">Services</a>
+
   </nav>
-  <a href="#" class="wordmark">Peet Neethling Construction (Pty) Ltd</a>
+
+
+  <a href="#" class="wordmark">
+
+    Peet Neethling Construction (Pty) Ltd
+
+  </a>
+
+
   <nav class="nav-right">
+
     <a href="#projects">Projects</a>
+
     <a href="#contact">Contact</a>
+
   </nav>
+
 </header>
 
+
+<!-- MOBILE NAV -->
+
 <nav class="mobile-nav" id="mobileNav">
+
   <a href="#about">About</a>
+
   <a href="#services">Services</a>
+
   <a href="#projects">Projects</a>
+
   <a href="#contact">Contact</a>
+
 </nav>
 
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
 <section class="hero">
+
   <div class="hero-photos">
+
     <div class="hero-quad tl"></div>
     <div class="hero-quad tr"></div>
     <div class="hero-quad bl"></div>
     <div class="hero-quad br"></div>
+
   </div>
+
+
   <div class="hero-diamond">
+
     <div class="hero-diamond-inner">
-      <img class="hero-logo" src="logo.jpg" alt="Peet Neethling Construction logo">
-      <p class="hero-eyebrow">Mossel Bay & the Garden Route</p>
-      <h1>Peet Neethling Construction</h1>
-      <p class="hero-sub">Building consultant & contractor</p>
+
+      <img
+        class="hero-logo"
+        src="logo.jpg"
+        alt="Peet Neethling Construction logo"
+      >
+
+
+      <p class="hero-eyebrow">
+        Mossel Bay & the Garden Route
+      </p>
+
+
+      <h1>
+        Peet Neethling Construction
+      </h1>
+
+
+      <p class="hero-sub">
+        Building consultant & contractor
+      </p>
+
     </div>
+
   </div>
+
 </section>
+
+
+
+<!-- =====================================================
+     ABOUT
+===================================================== -->
 
 <section class="about" id="about">
+
   <div class="photo">
-    <img src="peet-on-site.jpg" alt="Peet Neethling on a building site near Mossel Bay">
+
+    <img
+      src="peet-on-site.jpg"
+      alt="Peet Neethling on a building site"
+    >
+
   </div>
+
+
   <div class="about-content">
-    <p class="eyebrow">About Peet</p>
-    <h2>Honouring the past, building the future.</h2>
-    <p>Peet Neethling Construction (Pty) Ltd works across two disciplines most builders don't combine: the careful restoration of historical buildings, and the design and construction of modern custom homes. Each historical project is approached with the same respect for original stonework, timber and detail that gave the building its character in the first place.</p>
-    <p>On new builds, that same attention to detail carries over — every job starts with a walk of the site, understanding the ground, the wind, the neighbours, and what the client actually needs, before a single quote goes out. Based in Mossel Bay, the team takes on projects across the Garden Route and Cape Winelands.</p>
+
+    <p class="eyebrow">
+      About Peet
+    </p>
+
+
+    <h2>
+      Honouring the past, building the future.
+    </h2>
+
+
+    <p>
+      Peet Neethling Construction (Pty) Ltd works across two
+      disciplines most builders don't combine: the careful
+      restoration of historical buildings, and the design and
+      construction of modern custom homes.
+    </p>
+
+
+    <p>
+      Each historical project is approached with respect for
+      original stonework, timber and detail that gave the
+      building its character in the first place.
+    </p>
+
+
+    <p>
+      On new builds, that same attention to detail carries over.
+      Every job starts with understanding the site, the ground,
+      the wind, the surroundings and what the client actually
+      needs before a quote goes out.
+    </p>
+
+
+    <p>
+      Based in Mossel Bay, the team takes on projects across
+      the Garden Route and Cape Winelands.
+    </p>
+
   </div>
+
 </section>
 
+
+
+<!-- =====================================================
+     SERVICES
+===================================================== -->
+
 <section class="services" id="services">
-  <p class="eyebrow">Services</p>
-  <h2>What Peet does</h2>
+
+  <p class="eyebrow">
+    Services
+  </p>
+
+
+  <h2>
+    What Peet does
+  </h2>
+
+
   <div class="service-grid">
+
+
     <div class="service-group">
-      <h3>Project management</h3>
+
+      <h3>
+        Project management
+      </h3>
+
       <ul>
+
         <li>Construction management</li>
         <li>Pre-construction planning</li>
         <li>Project estimation</li>
@@ -341,86 +1151,1074 @@
         <li>Change orders</li>
         <li>Subcontracting</li>
         <li>Process scheduling</li>
+
       </ul>
+
     </div>
+
+
     <div class="service-group">
-      <h3>Renovations & custom builds</h3>
+
+      <h3>
+        Renovations & custom builds
+      </h3>
+
       <ul>
+
         <li>Custom homes</li>
         <li>Residential homes</li>
         <li>Remodeling</li>
         <li>Renovation</li>
         <li>Bathrooms</li>
         <li>Decks</li>
+
       </ul>
+
     </div>
+
+
     <div class="service-group">
-      <h3>Trades & building</h3>
+
+      <h3>
+        Trades & building
+      </h3>
+
       <ul>
+
         <li>Carpentry</li>
         <li>Concrete</li>
         <li>Drywall</li>
         <li>Green building</li>
+
       </ul>
+
     </div>
+
   </div>
+
 </section>
+
+
+
+<!-- =====================================================
+     PROJECTS
+===================================================== -->
 
 <section class="projects" id="projects">
-  <p class="eyebrow">Recent work</p>
-  <h2>A few projects</h2>
+
+  <p class="eyebrow">
+    Selected Projects
+  </p>
+
+
+  <h2>
+    From first stage to finished space.
+  </h2>
+
+
+  <p class="projects-intro">
+    A selection of construction, renovation and building projects
+    completed by Peet Neethling Construction.
+  </p>
+
+
   <div class="project-grid">
-    <div class="project-card"><img src="project1.jpg" alt="Interior fit-out project" title="New Franschhoek wine facility and brand &quot;The Old Road Wine Co&quot;. Freshly built and renovated by Peet Neethling Construction!"></div>
-    <div class="project-card"><img src="project2.jpg" alt="Arched corridor build"></div>
-    <div class="project-card"><img src="build.jpg" alt="Construction site"></div>
+
+
+    <!-- OLD ROAD -->
+
+    <article class="project-card">
+
+      <div class="project-card-image">
+
+        <img
+          src="oldroadwine18.jpeg"
+          alt="Old Road Wine Co. project in Franschhoek"
+        >
+
+        <div class="project-number">
+          01
+        </div>
+
+      </div>
+
+
+      <div class="project-card-info">
+
+        <span class="project-location">
+          Franschhoek
+        </span>
+
+        <h3>
+          Old Road Wine Co.
+        </h3>
+
+        <p>
+          New and renovated wine facility work, documented
+          through the project stages to the finished result.
+        </p>
+
+        <button
+          class="view-project"
+          data-project="oldroad"
+        >
+          View project <span>→</span>
+        </button>
+
+      </div>
+
+    </article>
+
+
+
+    <!-- LANZARAC -->
+
+    <article class="project-card">
+
+      <div class="project-card-image">
+
+        <img
+          src="lanzarac1.jpeg"
+          alt="Lanzarac project in Stellenbosch"
+        >
+
+        <div class="project-number">
+          02
+        </div>
+
+      </div>
+
+
+      <div class="project-card-info">
+
+        <span class="project-location">
+          Stellenbosch
+        </span>
+
+        <h3>
+          Lanzarac
+        </h3>
+
+        <p>
+          Building and renovation work captured across the
+          different stages of the project.
+        </p>
+
+        <button
+          class="view-project"
+          data-project="lanzarac"
+        >
+          View project <span>→</span>
+        </button>
+
+      </div>
+
+    </article>
+
+
+
+    <!-- DE OUDE WELGEMOED -->
+
+    <article class="project-card">
+
+      <div class="project-card-image">
+
+        <img
+          src="deoude1.jpeg"
+          alt="De Oude Welgemoed project in Durbanville"
+        >
+
+        <div class="project-number">
+          03
+        </div>
+
+      </div>
+
+
+      <div class="project-card-info">
+
+        <span class="project-location">
+          Durbanville
+        </span>
+
+        <h3>
+          De Oude Welgemoed
+        </h3>
+
+        <p>
+          Renovation and building work documented through
+          the project stages.
+        </p>
+
+        <button
+          class="view-project"
+          data-project="deoude"
+        >
+          View project <span>→</span>
+        </button>
+
+      </div>
+
+    </article>
+
+
+
+    <!-- BELLINGHAM -->
+
+    <article class="project-card">
+
+      <div class="project-card-image">
+
+        <img
+          src="bellingham1.jpeg"
+          alt="Bellingham House near Pniel in Stellenbosch"
+        >
+
+        <div class="project-number">
+          04
+        </div>
+
+      </div>
+
+
+      <div class="project-card-info">
+
+        <span class="project-location">
+          Pniel · Stellenbosch
+        </span>
+
+        <h3>
+          Bellingham House
+        </h3>
+
+        <p>
+          A residential construction project documented from
+          early stages through the build.
+        </p>
+
+        <button
+          class="view-project"
+          data-project="bellingham"
+        >
+          View project <span>→</span>
+        </button>
+
+      </div>
+
+    </article>
+
+
+
+    <!-- UNDERGROUND -->
+
+    <article class="project-card">
+
+      <div class="project-card-image">
+
+        <img
+          src="underground1.jpeg"
+          alt="2000 cubic metre semi-underground tank at Franschhoek Cellar"
+        >
+
+        <div class="project-number">
+          05
+        </div>
+
+      </div>
+
+
+      <div class="project-card-info">
+
+        <span class="project-location">
+          Franschhoek Cellar · Franschhoek
+        </span>
+
+        <h3>
+          Underground
+        </h3>
+
+        <p>
+          A 2,000 m³ semi-underground tank designed to recycle
+          effluent and sewerage water.
+        </p>
+
+        <button
+          class="view-project"
+          data-project="underground"
+        >
+          View project <span>→</span>
+        </button>
+
+      </div>
+
+    </article>
+
+
+
+    <!-- VALCARE -->
+
+    <article class="project-card">
+
+      <div class="project-card-image">
+
+        <img
+          src="valcare1.jpeg"
+          alt="Alterations to Valcare Trust"
+        >
+
+        <div class="project-number">
+          06
+        </div>
+
+      </div>
+
+
+      <div class="project-card-info">
+
+        <span class="project-location">
+          Valcare Trust
+        </span>
+
+        <h3>
+          Valcare Trust
+        </h3>
+
+        <p>
+          Alterations and building work undertaken for the
+          Valcare Trust.
+        </p>
+
+        <button
+          class="view-project"
+          data-project="valcare"
+        >
+          View project <span>→</span>
+        </button>
+
+      </div>
+
+    </article>
+
+
+
+    <!-- CARLETTA -->
+
+    <article class="project-card">
+
+      <div class="project-card-image">
+
+        <img
+          src="carletta 1.jpeg"
+          alt="Carletta construction project"
+        >
+
+        <div class="project-number">
+          07
+        </div>
+
+      </div>
+
+
+      <div class="project-card-info">
+
+        <span class="project-location">
+          Completed project
+        </span>
+
+        <h3>
+          Carletta
+        </h3>
+
+        <p>
+          Construction and building work documented through
+          the different stages of the project.
+        </p>
+
+        <button
+          class="view-project"
+          data-project="carletta"
+        >
+          View project <span>→</span>
+        </button>
+
+      </div>
+
+    </article>
+
+
   </div>
+
 </section>
 
+
+
+<!-- =====================================================
+     PROJECT LIGHTBOX
+===================================================== -->
+
+<div
+  class="project-lightbox"
+  id="projectLightbox"
+  aria-hidden="true"
+>
+
+  <button
+    class="lightbox-close"
+    id="lightboxClose"
+    aria-label="Close project"
+  >
+    ×
+  </button>
+
+
+  <div class="lightbox-content">
+
+    <div class="lightbox-header">
+
+      <span id="lightboxLocation"></span>
+
+      <h2 id="lightboxTitle"></h2>
+
+      <p id="lightboxDescription"></p>
+
+    </div>
+
+
+    <div
+      class="project-gallery"
+      id="projectGallery"
+    ></div>
+
+  </div>
+
+</div>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
 <footer class="site-footer" id="contact">
+
   <div class="footer-inner">
+
+
     <div>
-      <h3>Peet Neethling Construction (Pty) Ltd</h3>
-      <p>Heritage restoration and modern custom homes, based in Mossel Bay, serving the Garden Route and Cape Winelands.</p>
+
+      <h3>
+        Peet Neethling Construction (Pty) Ltd
+      </h3>
+
+      <p>
+        Heritage restoration, renovations and modern custom
+        homes, based in Mossel Bay and serving the Garden Route
+        and Cape Winelands.
+      </p>
+
     </div>
+
+
     <div>
-      <p class="footer-label">Address</p>
-      <p>15 Hoy St<br>Klein Brak River, 6503</p>
+
+      <p class="footer-label">
+        Address
+      </p>
+
+      <p>
+        15 Hoy St<br>
+        Klein Brak River, 6503
+      </p>
+
     </div>
+
+
     <div>
-      <p class="footer-label">Contact</p>
-      <p>Mon–Fri, closes 7pm<br><a href="tel:+27847456624">+27 84 745 6624</a><br><a href="mailto:peetneethlingcon@gmail.com">peetneethlingcon@gmail.com</a></p>
+
+      <p class="footer-label">
+        Contact
+      </p>
+
+      <p>
+
+        Mon–Fri, closes 7pm<br>
+
+        <a href="tel:+27627451461">
+          062 745 1461
+        </a><br>
+
+        <a href="mailto:peetneethlingcon@gmail.com">
+          peetneethlingcon@gmail.com
+        </a>
+
+      </p>
+
     </div>
+
+
     <div>
-      <p class="footer-label">Areas served</p>
-      <p>Mossel Bay, Knysna, George, Franschhoek, Stellenbosch, Cape Town, Paarl, Wellington</p>
+
+      <p class="footer-label">
+        Areas served
+      </p>
+
+      <p>
+        Mossel Bay, Knysna, George, Franschhoek,
+        Stellenbosch, Cape Town, Paarl, Wellington
+      </p>
+
     </div>
+
+
   </div>
+
+
   <div class="footer-bottom">
-    <a href="https://wa.me/27847456624?text=Hi%20Peet%2C%20I%20found%20your%20website%20and%20would%20like%20to%20enquire%20about%20your%20construction%20services." target="_blank" rel="noopener">WhatsApp</a>
-<a href="https://www.google.com/maps/place/Peet+Neethling+Construction/data=!4m2!3m1!1s0x0:0x7532f5104111d5e1?sa=X&ved=1t:2428&ictx=111" target="_blank" rel="noopener">Google Business Profile</a>
-    <a href="https://www.facebook.com/peetneethlingconstruction/" target="_blank" rel="noopener" class="social-link">
-      <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" style="vertical-align:-3px;margin-right:5px"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.91h2.54V9.85c0-2.51 1.49-3.9 3.77-3.9 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.89h2.78l-.44 2.91h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg>Facebook
+
+
+    <a
+      href="https://wa.me/27627451461?text=Hi%20Peet%2C%20I%20found%20your%20website%20and%20would%20like%20to%20enquire%20about%20your%20construction%20services."
+      target="_blank"
+      rel="noopener"
+    >
+      WhatsApp
     </a>
+
+
+    <a
+      href="https://www.google.com/maps/place/Peet+Neethling+Construction/data=!4m2!3m1!1s0x0:0x7532f5104111d5e1?sa=X&ved=1t:2428&ictx=111"
+      target="_blank"
+      rel="noopener"
+    >
+      Google Business Profile
+    </a>
+
+
+    <a
+      href="https://www.facebook.com/peetneethlingconstruction/"
+      target="_blank"
+      rel="noopener"
+      class="social-link"
+    >
+
+      <svg
+        viewBox="0 0 24 24"
+        width="15"
+        height="15"
+        fill="currentColor"
+        style="vertical-align:-3px;margin-right:5px"
+      >
+
+        <path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.91h2.54V9.85c0-2.51 1.49-3.9 3.77-3.9 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.89h2.78l-.44 2.91h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/>
+
+      </svg>
+
+      Facebook
+
+    </a>
+
+
   </div>
+
 </footer>
 
-<a class="whatsapp-float" href="https://wa.me/27847456624?text=Hi%20Peet%2C%20I%20found%20your%20website%20and%20would%20like%20to%20enquire%20about%20your%20construction%20services." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
-  <svg viewBox="0 0 32 32" width="28" height="28" fill="#fff"><path d="M16.04 3C9.37 3 3.98 8.38 3.98 15.06c0 2.23.6 4.32 1.65 6.12L3 29l7.99-2.58a12.02 12.02 0 0 0 5.05 1.1h.01c6.66 0 12.06-5.38 12.06-12.06C28.11 8.38 22.72 3 16.04 3zm7.03 17.03c-.3.83-1.7 1.6-2.35 1.7-.6.09-1.35.13-2.18-.14-.5-.16-1.15-.37-1.97-.72-3.47-1.5-5.73-4.98-5.9-5.21-.17-.23-1.41-1.87-1.41-3.57s.87-2.53 1.18-2.88c.3-.34.66-.43.88-.43h.63c.2 0 .47-.04.73.56.3.7 1.02 2.42 1.1 2.6.09.17.15.38.03.61-.12.23-.18.38-.35.58-.17.2-.36.45-.51.61-.17.17-.35.36-.15.7.2.34.88 1.45 1.9 2.35 1.3 1.16 2.4 1.52 2.74 1.69.35.17.55.14.75-.08.2-.23.86-1 1.1-1.35.23-.34.46-.28.77-.17.31.11 1.99.94 2.33 1.11.35.17.58.26.66.4.08.15.08.85-.22 1.68z"/></svg>
+
+
+<!-- =====================================================
+     WHATSAPP FLOATING BUTTON
+===================================================== -->
+
+<a
+  class="whatsapp-float"
+  href="https://wa.me/27627451461?text=Hi%20Peet%2C%20I%20found%20your%20website%20and%20would%20like%20to%20enquire%20about%20your%20construction%20services."
+  target="_blank"
+  rel="noopener"
+  aria-label="Chat on WhatsApp"
+>
+
+  <svg
+    viewBox="0 0 32 32"
+    width="28"
+    height="28"
+    fill="#fff"
+  >
+
+    <path d="M16.04 3C9.37 3 3.98 8.38 3.98 15.06c0 2.23.6 4.32 1.65 6.12L3 29l7.99-2.58a12.02 12.02 0 0 0 5.05 1.1h.01c6.66 0 12.06-5.38 12.06-12.06C28.11 8.38 22.72 3 16.04 3zm7.03 17.03c-.3.83-1.7 1.6-2.35 1.7-.6.09-1.35.13-2.18-.14-.5-.16-1.15-.37-1.97-.72-3.47-1.5-5.73-4.98-5.9-5.21-.17-.23-1.41-1.87-1.41-3.57s.87-2.53 1.18-2.88c.3-.34.66-.43.88-.43h.63c.2 0 .47-.04.73.56.3.7 1.02 2.42 1.1 2.6.09.17.15.38.03.61-.12.23-.18.38-.35.58-.17.2-.36.45-.51.61-.17.17-.35.36-.15.7.2.34.88 1.45 1.9 2.35 1.3 1.16 2.4 1.52 2.74 1.69.35.17.55.14.75-.08.2-.23.86-1 1.1-1.35.23-.34.46-.28.77-.17.31.11 1.99.94 2.33 1.11.35.17.58.26.66.4.08.15.08.85-.22 1.68z"/>
+
+  </svg>
+
 </a>
 
+
+
+<!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
+
 <script>
-  var menuToggle=document.getElementById('menuToggle');
-  var mobileNav=document.getElementById('mobileNav');
-  menuToggle.addEventListener('click',function(){
-    var isOpen=mobileNav.classList.toggle('open');
-    menuToggle.setAttribute('aria-expanded',isOpen);
+
+
+/* =====================================================
+   MOBILE MENU
+===================================================== */
+
+var menuToggle =
+  document.getElementById('menuToggle');
+
+var mobileNav =
+  document.getElementById('mobileNav');
+
+
+menuToggle.addEventListener('click',function(){
+
+  var isOpen =
+    mobileNav.classList.toggle('open');
+
+  menuToggle.setAttribute(
+    'aria-expanded',
+    isOpen ? 'true' : 'false'
+  );
+
+});
+
+
+mobileNav.querySelectorAll('a').forEach(function(link){
+
+  link.addEventListener('click',function(){
+
+    mobileNav.classList.remove('open');
+
+    menuToggle.setAttribute(
+      'aria-expanded',
+      'false'
+    );
+
   });
-  mobileNav.querySelectorAll('a').forEach(function(link){
-    link.addEventListener('click',function(){
-      mobileNav.classList.remove('open');
-      menuToggle.setAttribute('aria-expanded','false');
+
+});
+
+
+
+/* =====================================================
+   PROJECT DATA
+===================================================== */
+
+var projectData = {
+
+
+  /* ---------------------------------------------------
+     OLD ROAD WINE CO.
+  --------------------------------------------------- */
+
+  oldroad: {
+
+    title: "Old Road Wine Co.",
+
+    location: "Franschhoek",
+
+    description:
+      "New and renovated wine facility work, documented through the project stages to the finished result.",
+
+    images: [
+
+      "oldroadwine3.jpeg",
+      "oldroadwine4.jpeg",
+      "oldroadwine5.jpeg",
+      "oldroadwine6.jpeg",
+      "oldroadwine7.jpeg",
+      "oldroadwine8.jpeg",
+      "oldroadwine9.jpeg",
+      "oldroadwine10.jpeg",
+      "oldroadwine11.jpeg",
+      "oldroadwine13.1.jpeg",
+      "oldroadwine13.3.jpeg",
+      "oldroadwine13.4.jpeg",
+      "oldroadwine13.5.jpeg",
+      "oldroadwine13.6.jpeg",
+      "oldroadwine14.jpeg",
+      "oldroadwine15.jpeg",
+      "oldroadwine16.jpeg",
+      "oldroadwine17.jpeg",
+      "oldroadwine18.jpeg"
+
+    ]
+
+  },
+
+
+  /* ---------------------------------------------------
+     LANZARAC
+  --------------------------------------------------- */
+
+  lanzarac: {
+
+    title: "Lanzarac",
+
+    location: "Stellenbosch",
+
+    description:
+      "Building and renovation work captured across the different stages of the project.",
+
+    images: [
+
+      "lanzarac1.jpeg",
+      "laanzarac2.jpeg",
+      "lanzarac3.jpeg",
+      "lanzarac4.jpeg",
+      "lanzarac5.jpeg",
+      "lanzarac6.jpeg",
+      "lanzarac7.jpeg",
+      "lanzarac8.jpeg",
+      "lanzarac9.jpeg",
+      "lanzarac10.jpeg",
+      "lanzarac11.jpeg",
+      "lanzarac12.jpeg",
+      "lanzarac13.jpeg",
+      "lanzarac14.jpeg",
+      "lanzarac15.jpeg",
+      "lanzarac16.jpeg",
+      "lanzarac17.jpeg",
+
+      "lanzarac16 (2).jpeg",
+
+      "1lanzarac10.jpeg",
+      "1lanzarac11.jpeg",
+      "2lanzarac10.jpeg"
+
+    ]
+
+  },
+
+
+  /* ---------------------------------------------------
+     DE OUDE WELGEMOED
+  --------------------------------------------------- */
+
+  deoude: {
+
+    title: "De Oude Welgemoed",
+
+    location: "Durbanville",
+
+    description:
+      "Renovation and building work documented through the project stages.",
+
+    images: [
+
+      "deoude1.jpeg",
+      "deoude2.jpeg",
+      "deoude3.jpeg",
+      "deoude4.jpeg",
+      "deoude5.jpeg",
+      "deoude6.jpeg",
+      "deoude7.jpeg"
+
+    ]
+
+  },
+
+
+  /* ---------------------------------------------------
+     BELLINGHAM HOUSE
+  --------------------------------------------------- */
+
+  bellingham: {
+
+    title: "Bellingham House",
+
+    location: "Pniel · Stellenbosch",
+
+    description:
+      "A residential construction project documented from early stages through the build.",
+
+    images: [
+
+      "bellingham1.jpeg",
+      "bellingham2.jpeg",
+      "bellingham3.jpeg",
+      "bellingham4.jpeg",
+      "bellingham5.jpeg",
+      "bellingham6.jpeg",
+      "bellingham7.jpeg",
+      "bellingham8.jpeg",
+      "bellingham9.jpeg",
+      "bellingham10.jpeg",
+      "bellingham11.jpeg",
+      "bellingham12.jpeg",
+      "bellingham13.jpeg",
+      "bellingham14.jpeg",
+      "bellingham15.jpeg",
+      "bellingham16.jpeg",
+      "bellingham17.jpeg"
+
+    ]
+
+  },
+
+
+  /* ---------------------------------------------------
+     UNDERGROUND
+  --------------------------------------------------- */
+
+  underground: {
+
+    title: "Underground",
+
+    location: "Franschhoek Cellar · Franschhoek",
+
+    description:
+      "A 2,000 m³ semi-underground tank designed to recycle effluent and sewerage water.",
+
+    images: [
+
+      "underground1.jpeg",
+      "underground2.jpeg",
+      "underground3.jpeg",
+      "underground4.jpeg"
+
+    ]
+
+  },
+
+
+  /* ---------------------------------------------------
+     VALCARE TRUST
+  --------------------------------------------------- */
+
+  valcare: {
+
+    title: "Valcare Trust",
+
+    location: "Valcare Trust",
+
+    description:
+      "Alterations and building work undertaken for the Valcare Trust.",
+
+    images: [
+
+      "valcare1.jpeg",
+      "valcare2.jpeg"
+
+    ]
+
+  },
+
+
+  /* ---------------------------------------------------
+     CARLETTA
+  --------------------------------------------------- */
+
+  carletta: {
+
+    title: "Carletta",
+
+    location: "Completed project",
+
+    description:
+      "Construction and building work documented through the different stages of the project.",
+
+    images: [
+
+      "carletta 1.jpeg",
+      "carletta2.jpeg",
+      "carletta3.jpeg",
+      "carletta4.jpeg",
+      "carletta5.jpeg",
+      "carletta6.jpeg",
+      "carletta7.jpeg",
+      "carletta8.jpeg",
+      "carletta9.jpeg"
+
+    ]
+
+  }
+
+};
+
+
+
+/* =====================================================
+   LIGHTBOX ELEMENTS
+===================================================== */
+
+var lightbox =
+  document.getElementById('projectLightbox');
+
+var gallery =
+  document.getElementById('projectGallery');
+
+var lightboxTitle =
+  document.getElementById('lightboxTitle');
+
+var lightboxLocation =
+  document.getElementById('lightboxLocation');
+
+var lightboxDescription =
+  document.getElementById('lightboxDescription');
+
+var lightboxClose =
+  document.getElementById('lightboxClose');
+
+
+
+/* =====================================================
+   OPEN PROJECT
+===================================================== */
+
+document.querySelectorAll('.view-project').forEach(function(button){
+
+  button.addEventListener('click',function(){
+
+    var project =
+      projectData[
+        button.getAttribute('data-project')
+      ];
+
+    if(!project){
+      return;
+    }
+
+
+    lightboxTitle.textContent =
+      project.title;
+
+
+    lightboxLocation.textContent =
+      project.location;
+
+
+    lightboxDescription.textContent =
+      project.description;
+
+
+    gallery.innerHTML = '';
+
+
+    project.images.forEach(function(image,index){
+
+      var item =
+        document.createElement('div');
+
+      item.className =
+        'gallery-item';
+
+
+      var img =
+        document.createElement('img');
+
+      img.src =
+        image;
+
+      img.alt =
+        project.title +
+        ' — project photograph ' +
+        (index + 1);
+
+      img.loading =
+        index === 0 ? 'eager' : 'lazy';
+
+
+      /* If an image cannot be found,
+         hide the broken image instead of
+         showing an ugly broken-image icon. */
+
+      img.onerror = function(){
+
+        item.style.display = 'none';
+
+      };
+
+
+      item.appendChild(img);
+
+      gallery.appendChild(item);
+
     });
+
+
+    lightbox.classList.add('active');
+
+    lightbox.setAttribute(
+      'aria-hidden',
+      'false'
+    );
+
+    document.body.classList.add(
+      'no-scroll'
+    );
+
+
+    window.scrollTo({
+      top:0,
+      behavior:'instant'
+    });
+
   });
+
+});
+
+
+
+/* =====================================================
+   CLOSE PROJECT
+===================================================== */
+
+function closeProject(){
+
+  lightbox.classList.remove('active');
+
+  lightbox.setAttribute(
+    'aria-hidden',
+    'true'
+  );
+
+  document.body.classList.remove(
+    'no-scroll'
+  );
+
+}
+
+
+lightboxClose.addEventListener(
+  'click',
+  closeProject
+);
+
+
+
+/* =====================================================
+   CLOSE WHEN CLICKING BACKGROUND
+===================================================== */
+
+lightbox.addEventListener('click',function(event){
+
+  if(event.target === lightbox){
+
+    closeProject();
+
+  }
+
+});
+
+
+
+/* =====================================================
+   ESCAPE KEY
+===================================================== */
+
+document.addEventListener('keydown',function(event){
+
+  if(event.key === 'Escape'){
+
+    closeProject();
+
+  }
+
+});
+
+
 </script>
+
+
 </body>
 </html>
