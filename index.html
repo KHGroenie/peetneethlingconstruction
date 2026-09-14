@@ -582,40 +582,34 @@ a{
 
 
 /* =====================================================
-   GALLERY
+   GALLERY — PINTEREST / MASONRY STYLE
 ===================================================== */
 
 .project-gallery{
-  display:grid;
-  grid-template-columns:repeat(2,1fr);
-  gap:15px;
+  column-count:2;
+  column-gap:15px;
 }
 
 .gallery-item{
+  display:inline-block;
+  width:100%;
+  margin:0 0 15px;
   overflow:hidden;
-  background:#111;
-  height:420px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
+  background:transparent;
+  break-inside:avoid;
 }
 
 .gallery-item img{
+  display:block;
   width:100%;
-  height:100%;
-  object-fit:contain;
+  height:auto;
+  object-fit:initial;
   transition:transform .4s ease;
 }
 
 .gallery-item:hover img{
   transform:scale(1.02);
 }
-
-.gallery-item:first-child{
-  grid-column:span 2;
-  height:560px;
-}
-
 
 /* =====================================================
    FOOTER
@@ -871,20 +865,18 @@ a{
   }
 
 
-  /* GALLERY */
 
-  .project-gallery{
-    grid-template-columns:1fr;
-  }
 
-  .gallery-item{
-    height:300px;
-  }
+ /* GALLERY — MOBILE */
 
-  .gallery-item:first-child{
-    grid-column:auto;
-    height:360px;
-  }
+.project-gallery{
+  column-count:1;
+  column-gap:0;
+}
+
+.gallery-item{
+  margin-bottom:15px;
+}
 
   .lightbox-content{
     width:88%;
