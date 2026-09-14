@@ -101,14 +101,25 @@
   .hero-sub{font-size:16px;color:var(--body);}
 
   @media (max-width:760px){
+    .hero{
+      height:auto;min-height:0;overflow:visible;
+      display:flex;flex-direction:column;
+    }
+    .hero-quad{
+      position:static;width:auto;height:auto;
+      aspect-ratio:1/1;
+    }
+    .hero-photos{
+      display:grid;grid-template-columns:1fr 1fr;
+    }
     .hero-diamond{
-      width:100%;height:auto;top:auto;left:0;bottom:0;
-      transform:none;border-radius:0;padding:48px 28px;
-      position:absolute;
+      position:static;
+      width:100%;height:auto;
+      transform:none;border-radius:0;
+      padding:48px 28px;
     }
     .hero-diamond-inner{transform:none;width:100%;}
     .hero h1{font-size:28px;}
-    .hero-quad.tr,.hero-quad.tl{height:35%;}
     .site-header{
       display:flex;flex-direction:column;gap:10px;
       padding:12px 20px;
@@ -223,7 +234,7 @@
   .footer-bottom{
     max-width:1100px;margin:36px auto 0;padding-top:24px;
     border-top:1px solid rgba(240,236,225,0.15);
-    display:flex;gap:24px;
+    display:flex;align-items:center;gap:24px;flex-wrap:wrap;
   }
   .footer-bottom a{font-size:13px;font-weight:500;color:var(--cream);}
   .footer-bottom a:hover{color:var(--brown);}
@@ -258,10 +269,12 @@
 </header>
 
 <section class="hero">
-  <div class="hero-quad tl"></div>
-  <div class="hero-quad tr"></div>
-  <div class="hero-quad bl"></div>
-  <div class="hero-quad br"></div>
+  <div class="hero-photos">
+    <div class="hero-quad tl"></div>
+    <div class="hero-quad tr"></div>
+    <div class="hero-quad bl"></div>
+    <div class="hero-quad br"></div>
+  </div>
   <div class="hero-diamond">
     <div class="hero-diamond-inner">
       <img class="hero-logo" src="logo.jpg" alt="Peet Neethling Construction logo">
