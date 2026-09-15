@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -633,6 +634,7 @@ a{
   transform:scale(1.02);
 }
 
+
 /* =====================================================
    FOOTER
 ===================================================== */
@@ -702,6 +704,11 @@ a{
 .social-link{
   display:inline-flex;
   align-items:center;
+}
+
+.copyright{
+  font-size:13px;
+  color:rgba(240,236,225,.65);
 }
 
 
@@ -811,12 +818,12 @@ a{
     background:rgba(10,14,20,.42);
   }
 
- .hero-diamond{
-  width:68vw;
-  height:68vw;
-  max-width:300px;
-  max-height:300px;
-}
+  .hero-diamond{
+    width:68vw;
+    height:68vw;
+    max-width:300px;
+    max-height:300px;
+  }
 
   .hero-diamond-inner{
     width:72%;
@@ -887,18 +894,16 @@ a{
   }
 
 
+  /* GALLERY — MOBILE */
 
+  .project-gallery{
+    column-count:1;
+    column-gap:0;
+  }
 
- /* GALLERY — MOBILE */
-
-.project-gallery{
-  column-count:1;
-  column-gap:0;
-}
-
-.gallery-item{
-  margin-bottom:15px;
-}
+  .gallery-item{
+    margin-bottom:15px;
+  }
 
   .lightbox-content{
     width:88%;
@@ -930,6 +935,11 @@ a{
   }
 
 }
+
+
+/* =====================================================
+   JAVASCRIPT
+===================================================== */
 
 </style>
 
@@ -1280,7 +1290,7 @@ a{
 
 
 
-    <!-- LANZARAC -->
+    <!-- LANZERAC -->
 
     <article class="project-card">
 
@@ -1288,7 +1298,7 @@ a{
 
         <img
           src="lanzarac5.jpeg"
-          alt="Lanzarac project in Stellenbosch"
+          alt="Lanzerac Hotel project in Stellenbosch"
         >
 
         <div class="project-number">
@@ -1309,10 +1319,12 @@ a{
         </h3>
 
         <p>
-          
-
-Following the devastating 2017 fire that severely damaged the historic Lanzerac Hotel, this project showcases the rebuilding and restoration of the estate. The gallery follows the progression from the fire-damaged structures through the rebuild and restoration to the completed hotel.
-
+          Following the devastating 2017 fire that severely
+          damaged the historic Lanzerac Hotel, this project
+          showcases the rebuilding and restoration of the estate.
+          The gallery follows the progression from the
+          fire-damaged structures through the rebuild and
+          restoration to the completed hotel.
         </p>
 
         <button
@@ -1403,8 +1415,8 @@ Following the devastating 2017 fire that severely damaged the historic Lanzerac 
         </h3>
 
         <p>
-        Heritage restoration and construction work at the historic Bellingham Homestead in the Cape Winelands.
-
+          Heritage restoration and construction work at the
+          historic Bellingham Homestead in the Cape Winelands.
         </p>
 
         <button
@@ -1520,7 +1532,7 @@ Following the devastating 2017 fire that severely damaged the historic Lanzerac 
 
         <img
           src="carletta7.jpeg"
-          alt="Carletta construction project"
+          alt="Carletta 14 garage and driveway construction project in Paarl"
         >
 
         <div class="project-number">
@@ -1533,7 +1545,7 @@ Following the devastating 2017 fire that severely damaged the historic Lanzerac 
       <div class="project-card-info">
 
         <span class="project-location">
-          Completed project
+          Carletta Street · Paarl
         </span>
 
         <h3>
@@ -1541,10 +1553,11 @@ Following the devastating 2017 fire that severely damaged the historic Lanzerac 
         </h3>
 
         <p>
-        
-
-A challenging garage and driveway construction at Carletta Street, Paarl — a project initially considered impossible by the engineer. The gallery follows the progression of the build from the initial work through to completion.
-
+          A challenging garage and driveway construction at
+          Carletta Street, Paarl — a project initially considered
+          impossible by the engineer. The gallery follows the
+          progression of the build from the initial work through
+          to completion.
         </p>
 
         <button
@@ -1731,6 +1744,11 @@ A challenging garage and driveway construction at Carletta Street, Paarl — a p
     </a>
 
 
+    <span class="copyright">
+      © Peet Neethling Construction 2026
+    </span>
+
+
   </div>
 
 </footer>
@@ -1860,17 +1878,17 @@ var projectData = {
 
 
   /* ---------------------------------------------------
-     LANZARAC
+     LANZERAC
   --------------------------------------------------- */
 
   lanzarac: {
 
-    title: "Lanzarac",
+    title: "Lanzerac Hotel — Stellenbosch",
 
     location: "Stellenbosch",
 
     description:
-      "Building and renovation work captured across the different stages of the project.",
+      "Following the devastating 2017 fire that severely damaged the historic Lanzerac Hotel, this project showcases the rebuilding and restoration of the estate. The gallery follows the progression from the fire-damaged structures through the rebuild and restoration to the completed hotel.",
 
     images: [
 
@@ -1941,7 +1959,7 @@ var projectData = {
     location: "Pniel · Stellenbosch",
 
     description:
-      "A residential construction project documented from early stages through the build.",
+      "Heritage restoration and construction work at the historic Bellingham Homestead in the Cape Winelands.",
 
     images: [
 
@@ -2022,12 +2040,12 @@ var projectData = {
 
   carletta: {
 
-    title: "Carletta",
+    title: "Carletta 14",
 
-    location: "Completed project",
+    location: "Carletta Street · Paarl",
 
     description:
-      "Construction and building work documented through the different stages of the project.",
+      "A challenging garage and driveway construction at Carletta Street, Paarl — a project initially considered impossible by the engineer. The gallery follows the progression of the build from the initial work through to completion.",
 
     images: [
 
@@ -2077,6 +2095,8 @@ var lightboxDescription =
 var lightboxClose =
   document.getElementById('lightboxClose');
 
+var previousScrollPosition = 0;
+
 
 
 /* =====================================================
@@ -2086,6 +2106,9 @@ var lightboxClose =
 document.querySelectorAll('.view-project').forEach(function(button){
 
   button.addEventListener('click',function(){
+
+    previousScrollPosition =
+      window.scrollY;
 
     var project =
       projectData[
@@ -2161,12 +2184,6 @@ document.querySelectorAll('.view-project').forEach(function(button){
       'no-scroll'
     );
 
-
-    window.scrollTo({
-      top:0,
-      behavior:'instant'
-    });
-
   });
 
 });
@@ -2189,6 +2206,11 @@ function closeProject(){
   document.body.classList.remove(
     'no-scroll'
   );
+
+  window.scrollTo({
+    top: previousScrollPosition,
+    behavior: 'instant'
+  });
 
 }
 
@@ -2236,3 +2258,4 @@ document.addEventListener('keydown',function(event){
 
 </body>
 </html>
+```
