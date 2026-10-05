@@ -550,6 +550,80 @@ a{
 
 
 /* =====================================================
+   TESTIMONIAL
+===================================================== */
+
+.testimonial{
+  max-width:1100px;
+  margin:0 auto;
+  padding:80px 40px 100px;
+  background:var(--cream);
+  border-top:1px solid rgba(30,42,56,0.08);
+}
+
+.testimonial .eyebrow{
+  font-weight:600;
+  font-size:13px;
+  letter-spacing:0.02em;
+  color:var(--brown-dark);
+  margin-bottom:14px;
+  text-align:center;
+}
+
+.testimonial-quote{
+  max-width:760px;
+  margin:0 auto;
+  text-align:center;
+}
+
+.testimonial-quote::before{
+  content:'“';
+  display:block;
+  font-family:'Playfair Display',serif;
+  font-size:72px;
+  line-height:0.8;
+  color:var(--brown);
+  margin-bottom:12px;
+}
+
+.testimonial-quote p{
+  font-family:'Playfair Display',serif;
+  font-weight:600;
+  font-size:24px;
+  line-height:1.55;
+  color:var(--ink);
+}
+
+.testimonial-source{
+  display:block;
+  margin-top:28px;
+  padding-top:22px;
+  border-top:1px solid rgba(30,42,56,0.12);
+  max-width:320px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.testimonial-source strong{
+  display:block;
+  font-family:'Inter',sans-serif;
+  font-size:14px;
+  font-weight:600;
+  color:var(--ink);
+  margin-bottom:4px;
+}
+
+.testimonial-source span{
+  display:block;
+  font-size:12px;
+  text-transform:uppercase;
+  letter-spacing:.14em;
+  color:var(--brown-dark);
+  line-height:1.6;
+}
+
+
+/* =====================================================
    PROJECT LIGHTBOX
 ===================================================== */
 
@@ -905,6 +979,17 @@ a{
 
   .project-card-info{
     padding:24px;
+  }
+
+
+  /* TESTIMONIAL */
+
+  .testimonial{
+    padding:56px 24px 70px;
+  }
+
+  .testimonial-quote p{
+    font-size:19px;
   }
 
 
@@ -1593,6 +1678,41 @@ a{
 
 
 <!-- =====================================================
+     TESTIMONIAL
+===================================================== -->
+
+<section class="testimonial" id="testimonial">
+
+  <p class="eyebrow">
+    Testimonial
+  </p>
+
+
+  <blockquote class="testimonial-quote">
+
+    <p>
+      We had to overcome a lot of challenges in the process and
+      were able to rely on the knowledge and competence of Peet
+      Neethling. His ability to work with the other Professionals
+      on the team was excellent and it was a pleasure to
+      experience his good nature and willingness to participate.
+    </p>
+
+    <footer class="testimonial-source">
+
+      <strong>Project Co-ordinator</strong>
+
+      <span>Lanzerac Hotel &amp; Spa fire rebuild</span>
+
+    </footer>
+
+  </blockquote>
+
+</section>
+
+
+
+<!-- =====================================================
      PROJECT LIGHTBOX
 ===================================================== -->
 
@@ -2272,4 +2392,3 @@ document.addEventListener('keydown',function(event){
 
 </body>
 </html>
-```
